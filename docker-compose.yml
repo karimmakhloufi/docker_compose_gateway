@@ -1,0 +1,14 @@
+services:
+  gateway:
+    build:
+      context: ./gateway
+    volumes:
+      - ./gateway/src:/app/src
+    ports:
+      - 5000:5000
+  servicea:
+    build:
+      context: ./servicea
+  serviceb:
+    build:
+      context: ./serviceb
