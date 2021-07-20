@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "nodemon src/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fast-gateway": "^2.9.3"
+    "fast-gateway": "^2.9.3",
+    "nodemon": "^2.0.12"
   }
 }

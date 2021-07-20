@@ -9,6 +9,10 @@ services:
   servicea:
     build:
       context: ./servicea
+    volumes:
+      - ./servicea/src:/app/src
   serviceb:
     build:
       context: ./serviceb
+    volumes:
+      - ./serviceb/src:/app/src
