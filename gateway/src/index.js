@@ -1,4 +1,5 @@
 const gateway = require("fast-gateway");
+const PORT = 5000;
 const server = gateway({
   routes: [
     {
@@ -12,4 +13,6 @@ const server = gateway({
   ],
 });
 
-server.start(5000);
+server
+  .start(PORT)
+  .then(() => console.log(`Server is running on http://localhost:${PORT}`));
